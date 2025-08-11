@@ -20,28 +20,37 @@ message="Hello World!"
 print(message.replace("World", "Python"))
 
 # Task 6
+text = "Python is a Programming language"
+print( "python" in text.lower())
 
 # Task7
+reverse_text = "python"
+print( ''.join(reversed(reverse_text)))
 
 # Task 8
 text ="     Taiwo    "
 print(text.strip())
 
 # task 9
-introduction = input("Introduce yourself in one sentence: ")
-print(text.find()) 
-
+sentence = input("Introduce yourself in one sentence: ")
+vowels_count = ( sentence.lower().count("a") + sentence.lower().count("e") + sentence.lower().count("i") + sentence.lower().count("o") + sentence.lower().count("u"))
+print("Number of vowels:", vowels_count)
 
 # task 10
+number = "1234"
+print(int(number)*2)
 
 # task 11
 fruits = "apple banana orange"
 print(fruits.split())  
 
 # task1 12
+sentence = input("Enter a sentence to be printed on a new line: ")
+print(*sentence.split(), sep="\n")
+
 
 # task 13
-sentence = input("Enter a sentence: ")
+sentence = input("Enter a sentence to replace all the spaces with under_score: ")
 print(sentence.replace(" ", "_"))  
 
 
