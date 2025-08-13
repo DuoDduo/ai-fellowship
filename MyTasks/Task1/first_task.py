@@ -1,4 +1,4 @@
-
+#  Ask the user for their first name and age, then print a welcome message using an f-string.
 name = input("Enter your name: ")
 age = int(input("Enter your age: "))
 
