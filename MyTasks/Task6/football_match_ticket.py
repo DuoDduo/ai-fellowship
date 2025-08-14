@@ -11,4 +11,4 @@ seat_number.discard(ticket)
 booked_seat=seat_number
 
 # - Show remaining seats after each booking.
-print(f"This is the remaining seat after seat{booked_seat} has been booked")
+print(f"This is the remaining seat numbers after seat{booked_seat} has been booked")

@@ -1,6 +1,7 @@
 # **Task1: Fruit collector**
 # - Ask the user to enter 5 favourite fruits.
 empty_set=set()
+
 print("Enter 5 of your favorite fruits ")
 fruit1= input("Enter Fruit 1: ")
 fruit2= input("Enter Fruit 2: ")
