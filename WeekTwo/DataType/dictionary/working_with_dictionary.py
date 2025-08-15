@@ -69,3 +69,90 @@ print(student)
 person={"name": "Emeka", "age":30}
 # 01. keys()
 print(person.keys)
+
+# 02.values()
+print(person.values())
+
+# 03. items()
+print(person.items())
+
+# 4. update()
+person.update({"age": 31, "city": "Lagos"})
+print(person)
+
+# Nested dictionaries
+students = {
+    "student1": {"name": "Ada", "age": 20},
+    "student2": {"name": "John", "age": 22}
+}
+
+print(students["student1"]["name"])  # Access nested data
+
+# Looping through dictionaries
+# Define a dictionary
+student = {"name": "Ada", "age": 20, "course": "Computer Science"}
+
+# Loop through keys
+for key in student:
+    print(key)
+
+# Loop through values
+for value in student.values():
+    print(value)  
+
+# Loop through key-value pairs
+for key, value in student.items():
+    print(f"{key}: {value}")      
+
+# Storing a student's biodata
+student = {
+    "name": "Chinedu",
+    "age": 19,
+    "department": "Engineering",
+    "subjects": ["Maths", "Physics", "Chemistry"],
+    "is_full_time": True
+}
+
+print(f"Name: {student['name']}")
+print(f"Subjects: {', '.join(student['subjects'])}")   
+
+# How to add  key-value pairs to an empty dictionary
+# Create an empty dictionary
+student = {}
+
+# Add key-value pairs to it
+student["name"] = "Goodness"
+student["Interest"] = "AI"
+student["Track"] = "AI_Dev"
+
+print(student)
+
+# List of dictionaries - Each student has their own dictionary
+students = [
+    {"Name": "John", "Interest": "AI", "Track": "AI_Dev"},
+    {"Name": "Mary", "Interest": "Cloud Computing", "Track": "AI_Eng"},
+    {"Name": "Paul", "Interest": "Cyber Security", "Track": "AI_Dev"}
+]
+
+print(students[0]["Name"])   
+print(students[1]["Track"])  
+
+# Dictionary of dictionaries - Each student is keyed by their ID
+students = {
+  "AI010"   :  {"Name": "John", "Interest": "AI", "Track": "AI_Dev"},
+  "AI020" :  {"Name": "Mary", "Interest": "Cloud Computing", "Track": "AI_Eng"},
+  "AI030"  :  {"Name": "Paul", "Interest": "Cyber Security", "Track": "AI_Dev"}
+}
+
+print(students["AI020"]["Name"])   
+print(students["AI030"]["Track"])
+
+# Dictionary of lists - Each subject stores a list of scores
+scores = {
+    "python": [85, 78, 92],
+    "pandas": [88, 74, 90],
+    "Scikit-learn": [80, 95, 87]
+}
+
+print(scores["python"])    
+print(scores["pandas"][1])  
