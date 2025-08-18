@@ -6,9 +6,9 @@
 # print(f"Candidate: {name}\nAge: {age}\nScore: {score}\nEligible: {eligibility}")
 
 name = input("Enter your name: ").lower()
-nationality = input("Enter your nationality: ").lower()
+nationality = input("Enter your nationality: ").title()
 registration_status=input("Are you a registered, full-time undergraduate student in a recognized Nigerian university: ").lower()
-scholarship_status=input("Are you currently receiving any other scholarship from an entity in the Oil and Gas industry, whether national or international ?(Yes/No) ").lower()
+scholarship_status=input("Are you currently receiving any other scholarship from an entity in the Oil and Gas industry, whether national or international ?(Yes/No) : ").lower()
 
 
 print("Enter your grade in the just concluded WASSCE in 5 relevant subjects: (A,B,C,D,E)")
@@ -26,6 +26,6 @@ grades.append(subject_3)
 grades.append(subject_4)
 grades.append(subject_5)
 
-eligibility = (nationality=="nigeria") and(registration_status=="yes") and (scholarship_status=="no" ) and grades == ["a", "b"]
+eligibility = (nationality=="Nigerian") and(registration_status=="yes") and (scholarship_status=="no" ) and set(grades) <= {"a","b"}
 
-print(eligibility and f"Congratulations{name}! You are eligible for the federal government scholarship" or f"Sorry {name}! You are not eligible for the scholarship")
+print(eligibility and f"Congratulations {name}! You are eligible for the federal government scholarship" or f"Sorry {name}! You are not eligible for the scholarship")
