@@ -1,5 +1,7 @@
+# an empty dictionary called student.
 student={}
 
+#  Ask the user to input their name and age,
 name = input("Enter student's name: ")
 age = int(input("Enter student's age: "))
 student["name"]=name

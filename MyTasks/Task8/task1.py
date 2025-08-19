@@ -1,5 +1,3 @@
-
-
 # - Explain each output of the program below.
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
@@ -25,10 +23,7 @@ print(f"{num1} < {num2} : {num1 < num2}")
 
 
 # - Write the code for 1 of the 3 use cases.
-
 # student promotion eligibility check
-
-
 student_score = 60   # Example: student scored 60
 passmark = 75        # Required pass mark
 
