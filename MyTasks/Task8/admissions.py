@@ -5,12 +5,12 @@ name=input("Enter your full name: ")
 age=int(input("Enter your age: "))
 utme_score=int(input('Enter your  UTME score: '))
 first_choice=input("Is UNILAG your firtst choice of University (YES?NO): ").lower()
-post_utme_score=int(input('Enter your POST UTME score: '))
+post_utme_score=int(input('Enter your POST UTME score (1-100): '))
 
 # calcultate departmental cut off mark
 departmental_cut_off= (utme_score+post_utme_score)/2
 # SUBJECTS
-print("Enter your O-level grades for 5 subjects (A-C is pass, D-F is Fail)")
+print("Enter your O-level grades for 5 subjects (A-F)")
 grades=[]
 english= input("Enter your grade for English: ").lower()
 mathematics= input("Enter your grade for mathematics: ").lower()
