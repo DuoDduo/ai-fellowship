@@ -27,10 +27,19 @@ print(f"{num1} < {num2} : {num1 < num2}")
 # - Write the code for 1 of the 3 use cases.
 
 # student promotion eligibility check
-passmark = 75 
-student_score = 60
 
-print(f"You passed the test : {passmark == student_score}") # False; test score is lower than expected range.
-print(f"Your score is lower than the passmark : {passmark != student_score}") # True; test score is lower than passmark
-print(f"You didn't met up to the passmark: {passmark < student_score}") # False; the passmark is higher than the student score.
-print(f"Your test score is relatively low: {passmark > student_score}") # True; test score is lower than the pass mark.
+
+student_score = 60   # Example: student scored 60
+passmark = 75        # Required pass mark
+
+print(f"You passed the test : {student_score >= passmark}")
+# False, 60 is not greater than or equal to 75
+
+print(f"Your score is lower than the passmark : {student_score < passmark}")
+# True, 60 is less than 75
+
+print(f"You didn't meet up to the passmark for promotion into the next class: {student_score < passmark}")
+# True, 60 is less than 75
+
+print(f"Your test score is relatively low and you would have to repeat your present class: {student_score < (passmark - 10)}")
+# True, 60 is lower than 65 (far below pass mark)
