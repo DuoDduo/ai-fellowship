@@ -11,3 +11,4 @@ quantity=int(input(f"Kindly enter the quantity of {item} you want to buy: "))
 print("Before Purchase:", store)
 store[item] -= quantity
 print("After Purchase: ",store )
+

@@ -1,10 +1,3 @@
-# name = input("Enter your name: ")
-# age = int(input("Enter your age: "))
-# score = int(input("Enter your test score: "))
-
-# eligibility = (age < 18) and (score > 70)
-# print(f"Candidate: {name}\nAge: {age}\nScore: {score}\nEligible: {eligibility}")
-
 name = input("Enter your name: ").lower()
 nationality = input("Enter your nationality: ").title()
 registration_status=input("Are you a registered, full-time undergraduate student in a recognized Nigerian university: ").lower()
