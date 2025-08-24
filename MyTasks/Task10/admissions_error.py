@@ -49,7 +49,7 @@ while True:
             break
 
         # Step 4: Final Success Message
-        print(f"Congratulations {name}! 🎉 You are eligible for admission into UNILAG.")
+        print(f"Congratulations {name}! You are eligible for admission into UNILAG.")
         break  # End loop after success
 
     except ValueError:

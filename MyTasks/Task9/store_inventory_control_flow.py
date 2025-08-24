@@ -26,7 +26,7 @@ while True:
         # Ask for the quantity the user wants to buy
         quantity = int(input(f"Kindly enter the quantity of {item} you want to buy: "))
         
-        # Check for invalid quantity like zero or negative numbers
+        # Check for invalid quantity like zero
         if quantity <= 0:
             print("Quantity must be greater than zero.")
 

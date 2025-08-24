@@ -1,8 +1,3 @@
-# ==============================================
-#          NAIJAFX EXCHANGE SERVICES
-#     Accurate & Reliable Currency Converter
-# ==============================================
-
 print("====================NAIJAFX EXCHANGE SERVICES======================")
 print("\t\tAccurate and Reliable Currency Converter")
 print("Welcome! Manage your Naira and convert to USD or GBP instantly.\n")
@@ -11,8 +6,8 @@ print("Welcome! Manage your Naira and convert to USD or GBP instantly.\n")
 balance = 500000.0
 
 #exchange rates
-USD_RATE = 0.0026  # Naira to USD
-GBP_RATE = 0.0021  # Naira to GBP
+usd_rate = 0.0026  # Naira to USD
+pounds_rate = 0.0021  # Naira to Pounds
 
 #transaction history
 transaction_history = []
@@ -23,15 +18,15 @@ while True:
         # Display current balance and menu
         print(f"\nYour current balance is: ₦{balance:,.2f}")
         print("What would you like to do?")
-        print("1. Convert Naira to USD or GBP")
-        print("2. Convert USD or GBP to Naira")
+        print("1. Convert Naira to USD or Pounds")
+        print("2. Convert USD or Pounds to Naira")
         print("3. Deposit Naira to your balance")
         print("4. View transaction history")
         print("5. Exit")
 
         main_choice = input("Enter 1, 2, 3, 4, or 5: ")
 
-        # Option 1: Naira to USD/GBP
+        # Option 1: Naira to USD/Pounds
         if main_choice == "1":
             naira_to_convert = float(input("Enter amount in Naira (₦) to convert: "))
             if naira_to_convert <= 0:
@@ -43,8 +38,8 @@ while True:
 
             print("\nChoose conversion option:")
             print("1. Convert to US Dollars only")
-            print("2. Convert to British Pounds only")
-            print("3. Convert to both USD and GBP")
+            print("2. Convert to Pounds only")
+            print("3. Convert to both USD and Pounds")
             choice = input("Enter 1, 2, or 3: ")
 
             print("\n=========================Conversion Summary========================")
@@ -52,32 +47,34 @@ while True:
             print(f"Nigeria (₦)\t\t\t|\t₦{balance:,.2f}")
 
             if choice == "1":
-                usd_amount = naira_to_convert * USD_RATE
+                usd_amount = naira_to_convert * usd_rate
                 balance -= naira_to_convert
                 print(f"US Dollars ($)\t\t\t|\t${usd_amount:,.2f}")
                 transaction_history.append(f"Converted ₦{naira_to_convert:,.2f} to ${usd_amount:,.2f}")
+                
             elif choice == "2":
-                gbp_amount = naira_to_convert * GBP_RATE
+                pounds_amount = naira_to_convert * pounds_rate
                 balance -= naira_to_convert
-                print(f"British Pounds (£)\t\t|\t£{gbp_amount:,.2f}")
-                transaction_history.append(f"Converted ₦{naira_to_convert:,.2f} to £{gbp_amount:,.2f}")
+                print(f"Pounds (£)\t\t|\t£{pounds_amount :,.2f}")
+                transaction_history.append(f"Converted ₦{naira_to_convert:,.2f} to £{pounds_amount :,.2f}")
+                
             elif choice == "3":
-                usd_amount = naira_to_convert * USD_RATE
-                gbp_amount = naira_to_convert * GBP_RATE
+                usd_amount = naira_to_convert * usd_rate
+                pounds_amount = naira_to_convert * pounds_rate
                 balance -= naira_to_convert
                 print(f"US Dollars ($)\t\t\t|\t${usd_amount:,.2f}")
-                print(f"British Pounds (£)\t\t|\t£{gbp_amount:,.2f}")
-                transaction_history.append(f"Converted ₦{naira_to_convert:,.2f} to ${usd_amount:,.2f} and £{gbp_amount:,.2f}")
+                print(f"Pounds (£)\t\t|\t£{pounds_amount :,.2f}")
+                transaction_history.append(f"Converted ₦{naira_to_convert:,.2f} to ${usd_amount:,.2f} and £{pounds_amount :,.2f}")
             else:
                 print("Invalid choice. No conversion performed.")
                 continue
             print(f"Remaining balance in Naira: ₦{balance:,.2f}")
 
-        # Option 2: USD/GBP to Naira
+        # Option 2: USD/Pounds to Naira
         elif main_choice == "2":
             print("\nChoose currency to convert to Naira:")
             print("1. US Dollars ($)")
-            print("2. British Pounds (£)")
+            print("2. Pounds (£)")
             currency_choice = input("Enter 1 or 2: ")
 
             if currency_choice == "1":
@@ -85,20 +82,20 @@ while True:
                 if usd_amount <= 0:
                     print("Amount must be greater than 0.")
                     continue
-                naira_equiv = usd_amount / USD_RATE
+                naira_equiv = usd_amount / usd_rate
                 balance += naira_equiv
                 print(f"${usd_amount:,.2f} = ₦{naira_equiv:,.2f}")
                 transaction_history.append(f"Converted ${usd_amount:,.2f} to ₦{naira_equiv:,.2f}")
 
             elif currency_choice == "2":
-                gbp_amount = float(input("Enter amount in GBP (£) to convert to Naira: "))
-                if gbp_amount <= 0:
+                pounds_amount = float(input("Enter amount in Pounds (£) to convert to Naira: "))
+                if pounds_amount <= 0:
                     print("Amount must be greater than 0.")
                     continue
-                naira_equiv = gbp_amount / GBP_RATE
+                naira_equiv = pounds_amount / pounds_rate
                 balance += naira_equiv
-                print(f"£{gbp_amount:,.2f} = ₦{naira_equiv:,.2f}")
-                transaction_history.append(f"Converted £{gbp_amount:,.2f} to ₦{naira_equiv:,.2f}")
+                print(f"£{pounds_amount :,.2f} = ₦{naira_equiv:,.2f}")
+                transaction_history.append(f"Converted £{pounds_amount :,.2f} to ₦{naira_equiv:,.2f}")
             else:
                 print("Invalid choice.")
                 continue
@@ -115,15 +112,16 @@ while True:
             print(f"Deposit successful! Your new balance is ₦{balance:,.2f}")
             transaction_history.append(f"Deposited ₦{deposit_amount:,.2f}")
 
-        # Option 4: View transaction history
+            # Option 4: View transaction history
         elif main_choice == "4":
             if not transaction_history:
                 print("No transactions yet.")
             else:
                 print("\n=================Transaction History=================")
-                for i, transaction in enumerate(transaction_history, start=1):
-                    print(f"{i}. {transaction}")
-                print("====================================================")
+                index = 1  # Initialize a counter
+                for transaction in transaction_history:
+                    print(f"{index}. {transaction}")
+                    index += 1  # Increment the counter for each transaction
 
         # Option 5: Exit program
         elif main_choice == "5":
@@ -137,4 +135,4 @@ while True:
         print("Invalid input! Please enter numeric values only.")
 
     finally:
-        print("NAIJAFX EXCHANGE SERVICES Accurate & Reliable Currency Converter\n")
+        print("NAIJAFX EXCHANGE SERVICES: Accurate & Reliable Currency Converter\n")

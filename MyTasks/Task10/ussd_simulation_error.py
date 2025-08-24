@@ -56,10 +56,12 @@ try:
                 airtime_balance -= 5000
                 data_balance += 20000
                 print("20GB purchased successfully!")
+                
             elif monthly_choice == "2" and airtime_balance >= 11000:
                 airtime_balance -= 11000
                 data_balance += 36000
                 print("36GB purchased successfully!")
+                
             elif monthly_choice == "3" and airtime_balance >= 20000:
                 airtime_balance -= 20000
                 data_balance += 54000
@@ -77,18 +79,22 @@ try:
                 airtime_balance -= 500
                 data_balance += 500
                 print("500MB purchased successfully for ₦500!")
+                
             elif weekly_choice == "2" and airtime_balance >= 800:
                 airtime_balance -= 800
                 data_balance += 1000
                 print("1GB purchased successfully for ₦800!")
+                
             elif weekly_choice == "3" and airtime_balance >= 1000:
                 airtime_balance -= 1000
                 data_balance += 1500
                 print("1.5GB purchased successfully for ₦1000!")
+                
             elif weekly_choice == "4" and airtime_balance >= 1500:
                 airtime_balance -= 1500
                 data_balance += 3500
                 print("3.5GB purchased successfully for ₦1500!")
+                
             elif weekly_choice == "5" and airtime_balance >= 2500:
                 airtime_balance -= 2500
                 data_balance += 6000
@@ -106,22 +112,27 @@ try:
                 airtime_balance -= 75
                 data_balance += 75
                 print("75MB purchased successfully for ₦75!")
+                
             elif daily_choice == "2" and airtime_balance >= 100:
                 airtime_balance -= 100
                 data_balance += 110
                 print("110MB purchased successfully for ₦100!")
+                
             elif daily_choice == "3" and airtime_balance >= 200:
                 airtime_balance -= 200
                 data_balance += 200
                 print("200MB purchased successfully for ₦200!")
+                
             elif daily_choice == "4" and airtime_balance >= 350:
                 airtime_balance -= 350
                 data_balance += 500
                 print("500MB purchased successfully for ₦350!")
+                
             elif daily_choice == "5" and airtime_balance >= 500:
                 airtime_balance -= 500
                 data_balance += 1000
                 print("1GB purchased successfully for ₦500!")
+                
             elif daily_choice == "6" and airtime_balance >= 750:
                 airtime_balance -= 750
                 data_balance += 2500
@@ -140,8 +151,8 @@ try:
 except ValueError:
     print("\nError: Please enter a valid number where required.")
 
-except Exception as e:
-    print(f"\nAn unexpected error occurred: {e}")
+except Exception:
+    print("\nAn unexpected error occurred")
 
 finally:
     # Final balances displayed after all transactions

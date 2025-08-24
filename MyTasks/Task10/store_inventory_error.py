@@ -50,9 +50,9 @@ while True:
     except ValueError:
         # Handles invalid inputs like letters instead of numbers
         print("Invalid input! Please enter numbers only for quantity.")
-    except Exception as e:
+    except Exception:
         # Handles any unexpected error
-        print("An unexpected error occurred:", e)
+        print("An unexpected error occurred:")
     finally:
         # This always runs whether there was an error or not
         print("Transaction completed. Ready for the next customer!")
