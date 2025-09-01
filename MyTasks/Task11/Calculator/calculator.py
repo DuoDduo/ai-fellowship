@@ -15,13 +15,13 @@ def multiply(a, b):
 # Function to perform division
 def divide(a, b):
     if b == 0:  # Denominator can't be zero
-        return "Error: Division by zero!"
+        return "Error: Number cannot be divided by zero!"
     return a / b
 
 # Function to perform modulus
 def modulus(a, b):
     if b == 0:
-        return "Error: Division by zero!"
+        return "Error: Number cannot be divided by zero!"
     return a % b
 
 # Function to perform exponential
@@ -58,7 +58,7 @@ def main():
 
             # Exit condition
             if choice == 8:
-                print("Exiting calculator... Goodbye!")
+                print("Exiting calculator...")
                 break
 
             # Handle operations requiring two inputs
@@ -85,7 +85,7 @@ def main():
                 result = square_root(a)
              # Exit condition
             elif choice == 8:
-                print("Exiting calculator... Goodbye!")
+                print("Exiting calculator...")
                 break    
 
             print(f"Result = {result}")
