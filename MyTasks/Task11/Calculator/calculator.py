@@ -15,13 +15,13 @@ def multiply(a, b):
 # Function to perform division
 def divide(a, b):
     if b == 0:  # Denominator can't be zero
-        return "Error: Number cannot be divided by zero!"
+        return "Number cannot be divided by zero!"
     return a / b
 
 # Function to perform modulus
 def modulus(a, b):
     if b == 0:
-        return "Error: Number cannot be divided by zero!"
+        return "Number cannot be divided by zero!"
     return a % b
 
 # Function to perform exponential
@@ -30,8 +30,8 @@ def exponent(a, b):
 
 # Function to calculate square root
 def square_root(a):
-    if a < 0:
-        return "Error: Cannot take square root of a negative number!"
+    if a <= 0:
+        return "Cannot take square root of zero or a negative number!"
     return math.sqrt(a)
 
 # Main program
