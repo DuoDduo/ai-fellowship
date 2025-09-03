@@ -99,23 +99,32 @@ print(Fathia.get_cgpa(4.7))
 print(Fathia.course)
 print(Fathia.state_of_origin)
 
-# # instance attributes
+# instance attributes
 # student1= Student("Anthony Johnson", "Engineering", 200, "Ogun")
 # student2 = Student("Fadilat Hassan", "Medicine", 400, "Lagos")
 # print(student1.name)  
 # print(student2.name)
+# class attribute shared by all objects of the class
+class Student:
+    university = "Federal University of Technology Akure" 
+    def __init__(self, name, course):
+        self.name = name         
+        self.course = course
+        self.university= self.get_university()
+    
+    
+    def get_university(self):
+      return"Federal University of Technology Akure"
 
-# # class attribute shared by all objects of the class
-# class Student:
-#     def __init__(self, name, course,university):
-#         self.name = name         
-#         self.course = course
-#         self.university= university
-#     university = "Federal University of Technology Akure"      
-
-# print(Student.university)   
-# # print(student1.university)   
-# print(student2.university)    
+student1= Student("Anthony Johnson", "Engineering")
+student2 = Student("Fadilat Hassan", "Medicine")
+print(student1.name)  
+print(student2.name) 
+# 
+print(Student.university)   
+print(student1.university)   
+print(student2.university)    
 
 
 # methods
+

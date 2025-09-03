@@ -9,7 +9,7 @@ print("Welcome to your Contact List!")
 print("You can search for any of your contacts, just like in your phone.")
 
 # Ask the user for a name
-search_name = input("\nWho would you like to call today? Enter their name: ")
+search_name = input("\nWho would you like to call today? Enter their name: ").title()
 
 # Safe retrieval with .get()
 result = contact_dict.get(search_name, f"Oops! '{search_name}' is not saved in your contacts.")
