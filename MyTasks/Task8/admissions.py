@@ -26,4 +26,7 @@ grades.append(subject_5)
 eligibility= (age >= 16) and(utme_score >= 200) and (post_utme_score>=50) and ( departmental_cut_off>=50) and(first_choice=="yes" ) and set(grades) <= {"a","b","c"}
 
 
-print(eligibility and f"Congratulations {name}! You are eligible for admission into UNILAg" or f"Sorry {name}! You are not eligible for admission into UNILAG")
+print(eligibility and f"Congratulations {name}! You are eligible for admission into UNILAg" or f"Sorry {name}! You are not eligible for admission into UNILAG")   
+
+
+0
