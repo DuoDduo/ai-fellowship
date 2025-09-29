@@ -3,7 +3,7 @@ import file_ops
 from pathlib import Path
 
 # Define the workspace and CSV file path
-workspace = Path("Task11") / "workspace"
+workspace = Path(r"MyTasks\Task11\workspace") 
 csv_file = workspace / "contacts.csv"
 
 # Function to get participant's name with validation

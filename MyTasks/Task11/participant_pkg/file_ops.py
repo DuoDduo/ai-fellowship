@@ -2,7 +2,7 @@ import csv
 from pathlib import Path
 
 # Define the folder to store the CSV file
-workspace = Path("workspace")
+workspace = Path(r"MyTasks\Task11\workspace") 
 csv_file = workspace / "contacts.csv"  # Path to the CSV file
 workspace.mkdir(exist_ok=True)  # Create folder if it doesn't exist
 
