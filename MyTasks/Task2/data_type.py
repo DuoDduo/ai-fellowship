@@ -1,13 +1,9 @@
-# =====================================
-#    PERSONAL INFO COLLECTOR 
-# =====================================
-# Enter your full name: Tunde Adesanya
-# Enter your age (in years): 21
-# Enter your height (in meters): 1.80
-
-
-
-
+# 7. Mixing Data Types
+#  - Ask the user for:
+#     - Your age (integer)
+#     - Your height in meters (float)
+#     - Your name (string)
+# - Print a sentence using f-string showing all details in one line, making sure to type-cast where necessary.
 
 print("==========================\n PERSONAL INFO COLLECTOR \n===========================")
 

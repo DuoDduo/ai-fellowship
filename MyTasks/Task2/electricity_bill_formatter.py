@@ -1,23 +1,9 @@
-# 	PHCN - POWER HOLDING COMPANY OF NIGERIA
-# 	----------------------------------------
-# Enter your full name: Adeola Johnson
-# Enter your account number: 10293847
-# Enter bill date (DD/MM/YYYY): 10/08/2025
-# Enter units consumed (kWh): 250
-# Enter cost per unit (₦): 65.5
-
-# 	ELECTRICITY CONSUMPTION BILL
-# 	========================================
-# 	Customer Name:	Adeola Johnson
-# 	Account No.:	10293847
-# 	Bill Date:	10/08/2025
-# 	Units Consumed:	250 kWh
-# 	Cost per Unit:	₦65.5
-# 	Total Amount:	₦16,375.00
-# 	========================================
-# 	Please pay before the due date to avoid disconnection.
-# 	Thank you for your prompt payment.
-# # 
+#6. Electricity Bill Formatter
+#  - Ask for:
+#    - Customer’s full name
+#    - Units consumed (kWh) – integer
+#    - Cost per unit – float
+# - Calculate the total bill and print it in a neatly formatted receipt using escape sequences for line breaks.
 
 print("PHCN- POWER HOLDING COMPANY OF NIGERIA\n===================================")
 customer_name=input("Enter your full name: ")

@@ -1,26 +1,13 @@
-# ========================================
-#         OFFICIAL SCHOOL FEES RECEIPT
-# ========================================
+# 10. School Fees Breakdown
+#   - Ask for:
+#     - School name
+#     - Tuition fee (float)
+#     - Hostel fee (float)
+#     - Feeding fee (float)
 
-# Enter the school name: Ideal College
-# Enter tuition fee (₦): 85000
-# Enter hostel fee (₦): 40000
-# Enter feeding fee (₦): 30000
+# - Calculate the total and print it in receipt format with each fee on a new line.
 
-# ----------------------------------------
-# School: Ideal College
-# Receipt No: RCPT2025001
-# Date: 10-Aug-2025
-# ----------------------------------------
-# Tuition Fee:     ₦85,000.00
-# Hostel Fee:      ₦40,000.00
-# Feeding Fee:     ₦30,000.00
-# ----------------------------------------
-# Total Fee:       ₦155,000.00
-# ----------------------------------------
-# Thank you for your payment. Wishing you a great academic session!
-
-
+# printing the title
 print("\n=====================SCHOOL FEES RECEIPT GENERATOR =========================\n")
 
 # Input
@@ -33,7 +20,7 @@ feeding_fee = float(input("Enter feeding fee (₦): \n"))
 # Calculate total
 total_fee = tuition_fee + hostel_fee + feeding_fee
 
-
+# printing the receipt
 print(f"==================={school_name.upper()}=====================")
 print(f"Tuition Fee:  \t₦{tuition_fee:,.2f}")
 print(f"Hostel Fee: \t₦{hostel_fee:,.2f}")

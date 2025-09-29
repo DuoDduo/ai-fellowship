@@ -1,14 +1,5 @@
-# NIGERIAN DISH HIGHLIGHT
-# ==============================
-# Enter the name of a Nigerian dish: Amala
-# Enter the state it is popular in: Oyo
 
-# Here’s what we found about this delicious dish:
-# Dish: Amala
-#     Popular in: Oyo State
-
-# Fun Fact: Amala is one of Nigeria's beloved meals, enjoyed by locals and visitors alike!
-
+#  Askimg for the name of a Nigerian dish and the state it is popular in. Print the result in two lines using `\n` and add a tab space before the state name using `\t`.
 print("==================NIGERIAN DISH HIGHLIGHT====================\n")
 dish=input("Enter the name of a Nigerian dish: ")
 state=input("Enter the state it is popular in: ")

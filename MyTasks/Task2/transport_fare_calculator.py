@@ -1,21 +1,8 @@
-# ======================================
-#        SHUTTLERS ROUTE FARE BOARD
-# ======================================
-# Please enter details for today's trip.
-
-# Enter route name (e.g., Lekki to Ikeja): Lekki to Yaba
-# Enter distance (in km): 18.5
-# Enter fare per km (₦): 120
-
-# ============= TODAY'S FARE ===========
-# Route:			Lekki to Yaba
-# Distance:		18.5 km
-# Fare per km:		₦120.00
-# Total Fare:		₦2,220.00
-# ======================================
-# RECEIPT. Thank you for riding with Shuttlers!
-
-# Shuttlers Transport Fare Calculator
+# 8. Transport Fare Calculator
+#  - Ask for:
+#     - Distance in km (float)
+#     - Fare per km (float)
+# - Calculate and display the total fare with two decimal places using `f"{value:.2f}"`.
 
 print("\n======================================SHUTTLERS ROUTE FARE BOARD======================================")
 print("Please enter details for today's trip.\n")
